@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Hero image carousel (auto-rotating, like the original site's header slideshow)
+  var heroSlides = document.querySelectorAll('.hero-slide');
+  var heroDots = document.querySelectorAll('.hero-dots button');
+  if (heroSlides.length > 1) {
+    var current = 0;
+    var showSlide = function (index) {
+      heroSlides[current].classList.remove('active');
+      if (heroDots[current]) heroDots[current].classList.remove('active');
+      current = index;
+      heroSlides[current].classList.add('active');
+      if (heroDots[current]) heroDots[current].classList.add('active');
+    };
+    heroDots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () { showSlide(i); });
+    });
+    setInterval(function () {
+      showSlide((current + 1) % heroSlides.length);
+    }, 5000);
+  }
+
   // Mobile hamburger toggle
   var hamburger = document.querySelector('.hamburger');
   var mobileNav = document.querySelector('.mobile-nav');
