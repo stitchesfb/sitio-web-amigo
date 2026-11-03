@@ -39,3 +39,4 @@ Deployed via GitHub Pages from this branch (`/` root). If a push doesn't
 show up at the live URL after a few minutes, check
 **Settings → Pages** and the **Actions** tab for the "pages build and
 deployment" run — a fresh commit (even a small one) re-triggers it.
+Website hosted on GitHub Pages.
