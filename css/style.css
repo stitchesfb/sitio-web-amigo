@@ -553,36 +553,3 @@ a.testimonial-card:hover .letter-link { color: var(--accent-hover); }
 }
 .site-footer a { color: var(--accent); }
 .site-footer .powered { margin-top: 6px; font-size: 12px; color: #999; }
-
-/* ---------- Cookie banner ---------- */
-.cookie-banner {
-  position: fixed;
-  left: 0; right: 0; bottom: 0;
-  background: #111;
-  color: #eee;
-  padding: 18px 24px;
-  z-index: 999;
-  display: none;
-}
-.cookie-banner.show { display: block; }
-.cookie-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 16px;
-  justify-content: space-between;
-}
-.cookie-inner h4 { color: #fff; margin: 0 0 4px; font-size: 15px; }
-.cookie-inner p { margin: 0; font-size: 13px; max-width: 640px; }
-.cookie-accept {
-  background: var(--gold);
-  color: #1b1b1b;
-  border: none;
-  padding: 10px 24px;
-  border-radius: 4px;
-  font-weight: 700;
-  cursor: pointer;
-  white-space: nowrap;
-}

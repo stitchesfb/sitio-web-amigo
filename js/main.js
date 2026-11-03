@@ -54,21 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Cookie banner
-  var cookieBanner = document.getElementById('cookie-banner');
-  var cookieAccept = document.getElementById('cookie-accept');
-  if (cookieBanner) {
-    if (!localStorage.getItem('flo_cookies_accepted')) {
-      cookieBanner.classList.add('show');
-    }
-    if (cookieAccept) {
-      cookieAccept.addEventListener('click', function () {
-        localStorage.setItem('flo_cookies_accepted', '1');
-        cookieBanner.classList.remove('show');
-      });
-    }
-  }
-
   // Subscribe form - NOT yet connected to any backend/email service.
   // This only stops the page from reloading; it does not send or store
   // the email anywhere. See README.md for what's needed to wire this up.
