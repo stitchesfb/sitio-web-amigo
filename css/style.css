@@ -446,32 +446,14 @@ ul.bullet-list li { margin-bottom: 10px; }
 }
 
 /* ---------- Contact ---------- */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
+.contact-center {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
 }
-@media (min-width: 900px) {
-  .contact-grid { grid-template-columns: 1fr 1fr; }
-}
-.contact-info h4 { margin-bottom: 4px; }
-.contact-info p { margin-bottom: 4px; }
-.contact-form label {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 6px;
-  font-size: 14px;
-}
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 18px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: 15px;
-}
-.contact-form textarea { min-height: 140px; resize: vertical; }
+.contact-center img { margin-left: auto; margin-right: auto; }
+.contact-center h4 { margin-bottom: 4px; }
+.contact-center p { margin-bottom: 4px; }
 
 /* ---------- Testimonial letter pages ---------- */
 .letter-page {
@@ -490,12 +472,6 @@ ul.bullet-list li { margin-bottom: 10px; }
   text-transform: uppercase;
   color: var(--accent);
 }
-.form-note {
-  font-size: 13px;
-  color: #777;
-  margin-top: -8px;
-}
-
 /* ---------- Subscribe ---------- */
 .subscribe {
   background: #fff;

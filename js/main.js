@@ -80,16 +80,4 @@ document.addEventListener('DOMContentLoaded', function () {
       if (msg) msg.textContent = 'This form is not connected yet - your email was not sent or saved.';
     });
   }
-
-  // Contact form - NOT yet connected to any backend/email service.
-  // This only stops the page from reloading; it does not send the
-  // message anywhere. See README.md for what's needed to wire this up.
-  var contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var msg = document.getElementById('contact-msg');
-      if (msg) msg.textContent = 'This form is not connected yet - your message was not sent. Please call or email us directly (see above).';
-    });
-  }
 });
