@@ -263,6 +263,19 @@ p { margin: 0 0 16px; }
 }
 .hero-dots button.active { background: #fff; }
 
+.section-tagline {
+  padding: 40px 24px 0;
+}
+.section-tagline h2 {
+  color: #9e9470;
+  text-align: left;
+  font-size: clamp(20px, 3vw, 28px);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
 .page-hero {
   padding: 60px 24px;
   text-align: center;
@@ -485,12 +498,13 @@ ul.bullet-list li { margin-bottom: 10px; }
 
 /* ---------- Subscribe ---------- */
 .subscribe {
-  background: var(--bg-dark);
-  color: #fff;
+  background: #fff;
+  color: var(--text-body);
   text-align: center;
   padding: 56px 24px;
+  border-top: 1px solid var(--border);
 }
-.subscribe h2 { color: #fff; }
+.subscribe h2 { color: var(--text-dark); }
 .subscribe-form {
   display: flex;
   flex-wrap: wrap;
@@ -503,21 +517,22 @@ ul.bullet-list li { margin-bottom: 10px; }
   flex: 1 1 240px;
   padding: 12px 14px;
   border-radius: 4px;
-  border: none;
+  border: 1px solid var(--border);
   font-size: 15px;
 }
-.subscribe-msg { margin-top: 12px; font-size: 14px; color: var(--gold-light); min-height: 20px; }
+.subscribe-msg { margin-top: 12px; font-size: 14px; color: var(--accent-hover); min-height: 20px; }
 
 /* ---------- Footer ---------- */
 .site-footer {
-  background: var(--bg-dark);
-  color: #cfcfcf;
+  background: #fff;
+  color: var(--text-body);
   text-align: center;
   padding: 28px 24px 16px;
   font-size: 14px;
+  border-top: 1px solid var(--border);
 }
-.site-footer a { color: #e6dcb8; }
-.site-footer .powered { margin-top: 6px; font-size: 12px; color: #888; }
+.site-footer a { color: var(--accent); }
+.site-footer .powered { margin-top: 6px; font-size: 12px; color: #999; }
 
 /* ---------- Cookie banner ---------- */
 .cookie-banner {
